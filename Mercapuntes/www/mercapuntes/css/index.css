@@ -1,0 +1,25 @@
+/*
+    Estilos de la parte principal
+*/
+.valor-precio {
+    font-style: italic;
+}
+
+.card-header small {
+    font-weight: 300;
+    font-style: italic;
+    color: gray;
+}
+
+span .fas {
+    color: black;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.titulo-anuncio {
+    letter-spacing: .1rem;
+    font-weight: bold;
+}

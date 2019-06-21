@@ -1,0 +1,234 @@
+/*
+    Estilos generales
+*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #048ABF;
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+footer {
+    color: #F2F2F2;
+    background-color: #2B308C;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    display: block;
+}
+
+form label {
+    font-style: italic;
+}
+
+#mensaje,
+#mensaje2 {
+    color: red;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color: #F2F2F2;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group input {
+    height: auto;
+    padding: 12px 20px;
+}
+
+.list-group-item {
+    background-color: #F2F2F2;
+}
+
+.list-group-item.active {
+    color: white;
+    background-color: gray;
+    border-color: darkgray;
+}
+
+.btn-warning {
+    background-color: #F2CC0F;
+    font-size: 80%;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+
+/*
+    Estilos de los modales
+*/
+.modal-content {
+    background-color: #F2F2F2;
+}
+
+.modal-title {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.btn-danger {
+    font-size: 80%;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+
+/*
+    Estilos de los botones RRSS
+*/
+.fab {
+    padding: 0px 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+
+/*
+    Estilos del aviso legal
+*/
+#avisoLegal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+#avisoLegal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+#avisoLegal-header {
+    padding: 2px 16px;
+    background-color: #F2CC0F;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: bold;
+
+}
+
+#avisoLegal-body {
+    padding: 2px 16px;
+}
+
+#cerrarAvisoLegal {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#cerrarAvisoLegal:hover,
+#cerrarAvisoLegal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#abrirAvisoLegal:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

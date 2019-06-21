@@ -1,0 +1,12 @@
+/*
+    Estilos de la parte principal
+*/
+.card-header small {
+    font-weight: 300;
+    font-style: italic;
+    color: gray;
+}
+
+span .fas {
+    color: black;
+}
